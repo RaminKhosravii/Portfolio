@@ -1,0 +1,212 @@
+:root {
+    --text: rgb(227, 222, 253);
+    --background: rgb(5, 1, 21);
+    --primary: rgb(152, 132, 247);
+    --secondary: rgb(152, 14, 10);
+    --accent: rgb(240, 152, 31);
+}
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: auto;
+    background-color: rgb(5, 1, 21);
+
+}
+
+
+header {
+    padding: 1.7rem 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: transparent;
+    align-content: center;
+}
+
+
+
+#click {
+    display: none;
+}
+
+
+section {
+    margin: 3rem 8.5rem;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.main h3 {
+    font-size: 1.5rem;
+    font-family: B Titr;
+    animation: leftSideAni 1s ease forwards;
+    animation-delay: 0.5s;
+}
+.main h1 {
+    font-size: 3rem;
+    font-family: B Titr;
+    font-weight: 600;
+    margin-top: .5rem;
+    color: rgb(227, 222, 253);
+    animation: leftSideAni 1s ease forwards;
+    animation-delay: 0.5s;
+}
+.main p {
+    line-height: 1.7;
+    font-family: B Titr;
+    font-size: 1.35rem;
+    margin-top: .5rem;
+    animation: leftSideAni 1s ease forwards;
+    animation-delay: 0.5s;
+}
+.Information {
+    width: 50%;
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.7rem;
+}
+
+.social a {
+    color: white;
+    font-family: B Titr;
+    font-size: 1rem;
+    border: 1px solid rgb(240, 152, 31);
+    border-radius: 50%;
+    padding: 0.3rem;
+    text-align: center;
+    width: 27px;
+    height: 25px;
+    display: grid;
+    place-items: center;
+}
+
+.social a:hover {
+    color: rgb(240, 152, 31);
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 20px var(--secondary-color);
+    border-color: white;
+    transition: all .3s ease-in-out;
+
+}
+
+/* IMAGE*/
+
+.images {
+    width: 25em;
+    height: 25em;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.blue-bg-outer {
+    width: 25em;
+    height: 25em;
+    border-radius: 50%;
+    background: rgb(240, 152, 31);
+    display: grid;
+    place-items: center;
+}
+
+.white-bg {
+    width: 21.875em;
+    height: 21.875em;
+    border-radius: 50%;
+    background: #fff;
+    display: grid;
+    place-items: center;
+}
+
+.blue-bg {
+    width: 18.75em;
+    height: 18.75em;
+    border-radius: 50%;
+    background: var(--primary-color);
+}
+
+.blue-bg img {
+    position: relative;
+    width: 100%;
+    border-radius: 50%;
+}
+
+@font-face {
+    font-family: vazir;
+    src: url('vazir.eot');
+    src: url('vazir.eot?#iefix') format('vazir-opentype') ,
+         url('vazir.woff') format('woff') ,
+         url('vazir.ttf') format('truetype');
+         font-weight: normal;
+         font-style: normal;
+}
+
+@font-face {
+    font-family: B Titr;
+    src: url('B Titr.eot');
+    src: url('B Titr.eot?#iefix') format('B Titr-opentype') ,
+         url('B Titr.woff') format('woff') ,
+         url('B Titr.ttf') format('truetype');
+         font-weight: normal;
+         font-style: normal;
+}
+
+@keyframes leftSideAni {
+    0% {
+        transform: translateX(+100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes navani {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes rightSideAni {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes topSideAni {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
